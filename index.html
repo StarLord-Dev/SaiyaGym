@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <title>Team WILSON HENTZ</title>
+</head>
+
+<body style="background-color: rgb(26, 26, 26);">
+    
+    <header>    
+
+        <div style="margin: 5px 15% 0px 15%">   
+            <h1 style="text-align: center;">
+                <img style="width: 42%; height: 42%; vertical-align: -50px;" src="LOGO WIILSON NEGRO.png">
+            </h1>
+        </div>
+
+    </header>
+
+    <section style="margin: 10px 12% 10px 12%;">
+        
+         <div class="cuadrito" class='animate' id="class1">
+            <div class="cuadrito-de-cuadrito">
+                <article class="letritas">
+                    Alumnos
+                </article>
+            </div>    
+        </div>
+        <div class="cuadrito" id="cua2">
+            <div class="cuadrito-de-cuadrito">
+                <article class="letritas">
+                    Pagos
+                </article>
+            </div>   
+        </div>
+        <div class="cuadrito" id="cua3">
+            <div class="cuadrito-de-cuadrito">
+                <article class="letritas">
+                    Horarios
+                </article>
+            </div>   
+        </div>
+        
+ 
+    </section>
+
+</body>
+<style>
+    .alinear-cuadrito{
+        margin: 30px 12% 30px 12%;
+    }
+    .cuadrito{
+        height:260px;
+        width: 360px;
+        margin: 0px 10px 20px 10px;
+        background:rgb(60, 60, 60);
+        background: linear-gradient(350deg, rgba(0,0,0,1) 13%, rgba(174,138,3,1) 80%, rgba(255,252,0,1) 100%);
+        border-radius: 35px 10px 35px 10px;
+        float: left;
+        overflow: hidden;
+    }
+    .cuadrito-de-cuadrito{
+        height: 80px;
+        width: 360px; 
+        margin: 0px 10px 0px 0px;
+        border-radius: 35px 10px 0px 0px;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    .gradiente{
+        animation-duration: 2s;
+        animation-name: gradiente;
+        animation-iteration-count: 2;
+        animation-direction: alternate;
+        animation-fill-mode: both;
+    }
+
+    @keyframes gradiente {
+
+        from{
+            height:260px;
+            width: 360px;
+            margin: 0px 10px 20px 10px;
+            background:rgb(60, 60, 60);
+            background: linear-gradient(350deg, rgba(0,0,0,1) 13%, rgba(174,138,3,1) 80%, rgba(255,252,0,1) 100%);
+            border-radius: 35px 10px 35px 10px;
+            float: left;
+            overflow: hidden;  
+        }
+        to{ 
+            height:260px;
+            width: 360px;
+            margin: 0px 10px 20px 10px;
+            background:rgb(60, 60, 60);
+            background: linear-gradient(140deg, rgba(0,0,0,1) 13%, rgba(174,138,3,1) 80%, rgba(255,252,0,1) 100%);
+            border-radius: 35px 10px 35px 10px;
+            float: left;
+            overflow: hidden;
+           
+        }
+    }
+    .letritas{
+        font-size: 70px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: italic;
+        text-align: center;
+        color: azure;
+    }
+
+
+    
+</style>
+<script>
+    alert("Empecemos...!");
+</script>
+<script>
+    var anim = document.getElementById("class1");
+    anim.addEventListener("mousemove", null, true);
+    anim.className="gradiente";
+    
+    
+</script>
